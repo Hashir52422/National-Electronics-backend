@@ -10,7 +10,7 @@ async function start() {
     await connectDB();
 
     const server = app.listen(PORT, () => {
-      console.log(`Nahyan Store API running on port ${PORT}`);
+      console.log(`SnapCell API running on port ${PORT}`);
     });
 
     process.on('unhandledRejection', (err) => {

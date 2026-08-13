@@ -1,7 +1,7 @@
 {
-  "name": "nahyan-store-backend",
+  "name": "snapcell-backend",
   "version": "1.0.0",
-  "description": "Backend REST API for Nahyan Store (single-vendor electronics e-commerce MVP)",
+  "description": "Backend REST API for SnapCell (single-vendor electronics e-commerce MVP)",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",

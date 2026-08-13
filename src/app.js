@@ -8,6 +8,7 @@ const productRoutes = require('./routes/productRoutes');
 const categoryRoutes = require('./routes/categoryRoutes');
 const orderRoutes = require('./routes/orderRoutes');
 const wishlistRoutes = require('./routes/wishlistRoutes');
+const chatRoutes = require('./routes/chatRoutes');
 const { notFound, errorHandler } = require('./middleware/errorHandler');
 
 const app = express();
@@ -35,6 +36,7 @@ app.use('/api/v1/products', productRoutes);
 app.use('/api/v1/categories', categoryRoutes);
 app.use('/api/v1/orders', orderRoutes);
 app.use('/api/v1/wishlist', wishlistRoutes);
+app.use('/api/v1/chat', chatRoutes);
 
 app.use(notFound);
 app.use(errorHandler);

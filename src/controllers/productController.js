@@ -42,7 +42,11 @@ const getProducts = asyncHandler(async (req, res) => {
   }
 
   if (search) {
-    filter.$text = { $search: search };
+    // Regex partial match (rather than $text) so results appear while the
+    // user is still typing, not only once a full word is entered.
+    const escaped = search.trim().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const pattern = new RegExp(escaped, 'i');
+    filter.$or = [{ title: pattern }, { description: pattern }];
   }
 
   if (minPrice || maxPrice) {

@@ -1,6 +1,6 @@
-# Nahyan Store — Backend API
+# SnapCell — Backend API
 
-REST API for Nahyan Store, a single-vendor electronics e-commerce MVP. Built with Node.js, Express, and MongoDB (Mongoose). Auth uses JWT bearer tokens; passwords are hashed with bcrypt.
+REST API for SnapCell, a single-vendor electronics e-commerce MVP. Built with Node.js, Express, and MongoDB (Mongoose). Auth uses JWT bearer tokens; passwords are hashed with bcrypt.
 
 ## Setup
 
